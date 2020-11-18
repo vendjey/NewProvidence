@@ -40,7 +40,6 @@ body {
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
-    margin-left: 50px;
     justify-content: flex-start;
 }
 .header__menu {
@@ -79,17 +78,20 @@ body {
     cursor: pointer;
     color: #267df4;
 }
-.hamberger__menu {
+.hamburger__menu {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    margin-right: 30px;
 }
 .hamburger {
     width: 13px;
     height: 2px;
     background-color: black;
     margin: 1px 0;
+}
+.hamburger__menu:hover {
+    cursor: pointer;
 }
 
 
@@ -119,7 +121,7 @@ body {
     .content-wrapper {
         max-width: 970px; 
     }
-    .header__left {
+    .header__menu {
         display: none;
     }
     .header__right {
@@ -127,5 +129,8 @@ body {
     }
     .header__center {
         width: 100%;
+    }
+    .header__left {
+        width: auto;
     }
 }
