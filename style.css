@@ -13,6 +13,8 @@ body {
 .content-wrapper {
     max-width: 1170px;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .header {
     display: flex;
@@ -20,10 +22,11 @@ body {
     width: 100%;
     font-size: 16px;
     z-index: 100;
-    background-color: transparent; 
-    margin:56px;
+    background-color: #ffffff;
+    padding: 24px 10px;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
 }
 .header__main {
     display: flex;
@@ -31,6 +34,7 @@ body {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    text-align: center;
 }
 .header__left {
     display: flex;
@@ -90,11 +94,69 @@ body {
     background-color: black;
     margin: 1px 0;
 }
-.hamburger__menu:hover {
+.hamburger__menu:hover .hamburger {
+    background-color: blue;
     cursor: pointer;
+  }
+  .hamburger__menu:hover {
+    cursor: pointer;
+  }
+.happens {
+    width: 100%;
+    background-image:url(images/banner_background.jpg);
+    padding-top: 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    height: 1050px;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
 }
-
-
+.happens__header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 62px;
+    line-height: 72px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.happens__text {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    color: #8c8f94;
+}
+.wath__video {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 48px;
+    padding: 14px 48px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #26272d;
+    border: 1px solid rgba(38, 39, 45, 0.1);
+    border-radius: 30px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+}
+.iphone {
+    vertical-align: middle;
+    position: absolute;
+    bottom: -310px;
+    left: 50%;
+    margin-left: -185px;
+}
 
 
 
@@ -132,5 +194,28 @@ body {
     }
     .header__left {
         width: auto;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .content-wrapper {
+        max-width: 750px; 
+    }
+}
+@media screen and (max-width: 570px) {
+    .content-wrapper {
+        max-width: 550px; 
+    }
+    .iphone {
+        bottom: -250px;
+        margin-left: -140px;
+        width: 280px;
+    }
+    .header__left {
+        padding: 0px;
+    }
+    .header__main {
+        padding: 0px;
     }
 }
