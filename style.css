@@ -1,9 +1,7 @@
 * {
-    font-family: 'Roboto', sans-serif;
-}
-* {
     box-sizing: border-box;
-}
+    font-family: 'Roboto', sans-serif;
+}    
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic);
 body {
     margin: 0;
@@ -13,8 +11,7 @@ body {
 .content-wrapper {
     max-width: 1170px;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 .header {
     display: flex;
@@ -24,16 +21,14 @@ body {
     z-index: 100;
     background-color: #ffffff;
     padding: 24px 10px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
 }
 .header__main {
     display: flex;
     padding-right: 15px;
     padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
     text-align: center;
 }
 .header__left {
@@ -42,8 +37,6 @@ body {
     padding-left: 15px;  
     width: 33.33333333%;
     min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
     justify-content: flex-start;
 }
 .header__menu {
@@ -60,7 +53,7 @@ body {
     justify-content: center;
     cursor: pointer;
 }
-.header__right {
+.header__get-app {
     display: flex;
     align-items: center;
     width: 33.33333333%;
@@ -82,23 +75,23 @@ body {
     cursor: pointer;
     color: #267df4;
 }
-.hamburger__menu {
+.burger {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-right: 30px;
 }
-.hamburger {
+.burger-line {
     width: 13px;
     height: 2px;
     background-color: black;
     margin: 1px 0;
 }
-.hamburger__menu:hover .hamburger {
+.burger:hover .hamburger {
     background-color: blue;
     cursor: pointer;
   }
-  .hamburger__menu:hover {
+  .burger:hover {
     cursor: pointer;
   }
 .happens {
@@ -127,14 +120,13 @@ body {
 }
 .happens__text {
     max-width: 750px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     display: flex;
     text-align: center;
     font-size: 20px;
     color: #8c8f94;
 }
-.wath__video {
+.wath-video {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -146,8 +138,7 @@ body {
     border: 1px solid rgba(38, 39, 45, 0.1);
     border-radius: 30px;
     cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 48px auto;
     max-width: 200px;
 }
 .iphone {
@@ -186,7 +177,7 @@ body {
     .header__menu {
         display: none;
     }
-    .header__right {
+    .header__get-app {
         display: none;
     }
     .header__center {
@@ -195,7 +186,8 @@ body {
     .header__left {
         width: auto;
         padding: 0px;
-        margin: 0px;
+        margin-top: 5px;
+        position: absolute;
     }
 }
 @media screen and (max-width: 768px) {
